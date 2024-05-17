@@ -1,3 +1,21 @@
 {
-    "profile": "welcolm"
+    "profile": "welcolm",
+    "projects": {
+        "pr1": {
+            "name": "My World",
+            "services": [
+                "HTML",
+                "JS"
+            ]
+        },
+        "pr2": {
+            "name": "Wether",
+            "services": [
+                "CSS",
+                "HTML",
+                "JS",
+                "one"
+            ]
+        }
+    }
 }

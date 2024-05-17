@@ -1,3 +1,21 @@
 {
-    "profile": "Willkommen"
+    "profile": "Willkommen",
+    "projects": {
+        "pr1": {
+            "name": "Meine Welt",
+            "services": [
+                "HTML",
+                "JS"
+            ]
+        },
+        "pr2": {
+            "name": "Wetter",
+            "services": [
+                "CSS",
+                "HTML",
+                "JS",
+                "eine"
+            ]
+        }
+    }
 }

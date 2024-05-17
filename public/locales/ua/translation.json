@@ -1,3 +1,21 @@
 {
-    "profile": "Ласкаво просимо"
+    "profile": "Ласкаво просимо",
+    "projects": {
+        "pr1": {
+            "name": "Мій світ",
+            "services": [
+                "HTML",
+                "JS"
+            ]
+        },
+        "pr2": {
+            "name": "Погода",
+            "services": [
+                "CSS",
+                "HTML",
+                "JS",
+                "docek"
+            ]
+        }
+    }
 }
