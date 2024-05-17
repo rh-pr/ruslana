@@ -1,4 +1,10 @@
 {
+    "nav": [
+        "Zuhause",
+        "Fertigkeiten",
+        "Portfolio",
+        "Kontakte"
+    ],
     "profile": "Willkommen",
     "projects": {
         "pr1": {

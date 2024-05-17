@@ -1,11 +1,9 @@
-import './App.css';
-import Home from './components/Home';
-import LanguageSwitch from './components/LanguageSwitch';
+import './App.scss';
+import Home from './components/Test';
 
 function App() {
   return (
     <div className="App">
-      <LanguageSwitch />
       <Home />
     </div>
   );

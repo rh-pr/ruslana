@@ -1,4 +1,10 @@
 {
+    "nav": [
+        "Home",
+        "Skils",
+        "Portpholio",
+        "Contacts"
+    ],
     "profile": "welcolm",
     "projects": {
         "pr1": {
