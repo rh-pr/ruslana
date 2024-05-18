@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-function Home() {
+function Test() {
 const { t } = useTranslation();
 const projects = t('projects', { returnObjects: true });
   return (
@@ -19,4 +19,4 @@ const projects = t('projects', { returnObjects: true });
   )
 }
 
-export default Home
+export default Test
