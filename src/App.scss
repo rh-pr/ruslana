@@ -20,12 +20,19 @@ $primary_color: #d38c5c;
     }
 }
 
+%menu-btn {
+    width: 40px;
+    height: 5px;
+    background-color: $primary_color;
+}
+
 .main {
     width: 100%;
     min-height: 100vh;
     padding: 6px;
 
     .nav {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -64,11 +71,11 @@ $primary_color: #d38c5c;
 
             .navigation {
                 padding-right: 8vw;
+                font-size: 1.3em;
 
                 ul {
                     display: flex;
                     gap: 4vw;
-
 
                     li {
                         padding: 1vw;
@@ -80,7 +87,7 @@ $primary_color: #d38c5c;
                         &:hover {
 
                             box-shadow: 0 0 25px rgb(236, 174, 93, 0.5);
-                            font-size: 1.5em;
+                            font-size: 1.5rem;
                         }
                     }
 
@@ -95,11 +102,62 @@ $primary_color: #d38c5c;
                     font-weight: bold;
                     padding: 4px;
                     border: none;
+                    font-size: 1.2em;
 
                     &:hover {
                         box-shadow: 0 0 25px rgb(236, 174, 93, 0.5);
                     }
                 }
+            }
+
+            .nav-btn {
+                margin-right: 5vw;
+                padding: 3px;
+                height: 26px;
+                display: flex;
+                align-items: center;
+
+                .icon-btn {
+                    @extend %menu-btn;
+                    position: relative;
+
+                    &:before {
+                        @extend %menu-btn;
+                        content: "";
+                        position: absolute;
+                        top: 14px;
+                        transition-duration: 0.5s;
+                    }
+
+                    &:after {
+                        @extend %menu-btn;
+                        content: "";
+                        position: absolute;
+                        top: -14px;
+                        transition-duration: 0.5s;
+                    }
+                }
+
+                .active {
+                    background-color: transparent;
+                    rotate: 0deg;
+
+
+
+
+                    &:before {
+                        rotate: 45deg;
+                        top: 0;
+                        transition-duration: 0.5s;
+                    }
+
+                    &:after {
+                        rotate: -45deg;
+                        top: 0;
+                        transition-duration: 0.5s;
+                    }
+                }
+
             }
         }
 
