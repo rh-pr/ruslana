@@ -10,8 +10,8 @@ function Nav() {
         <Logo />
         <div className='nav-content'>
           <Navigation />
-          <NavBtn />
           <LanguageSwitch />
+          <NavBtn />
         </div>
         
       </div>

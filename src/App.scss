@@ -26,6 +26,68 @@ $primary_color: #d38c5c;
     background-color: $primary_color;
 }
 
+@mixin menu-open () {
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: calc(100vw - 110px);
+    padding: 3vh 5vw;
+    color: rgb(215, 167, 135);
+    background-color: rgba(248, 192, 146, 0.4);
+    box-shadow: 0 0 25px rgba(111, 69, 14, 0.5);
+    border-top-left-radius: 10%;
+    overflow: hidden;
+}
+
+@mixin menu-open-before ($boll-position) {
+    content: "";
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    background-color: rgb(60, 27, 2);
+    box-shadow: 0 0 45px rgba(215, 168, 114, 0.5);
+    border: 1px solid #f2e0ba;
+    position: absolute;
+    left: -$boll-position;
+    top: -$boll-position;
+}
+
+@mixin li-open () {
+    background-color: #000;
+    width: 90%;
+    height: 8vh;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    box-shadow: 0 0 25px rgba(198, 115, 7, 0.5);
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+@keyframes hide-menu {
+    from {
+        width: calc(100vw - 110px);
+    }
+
+    to {
+        width: 0px;
+        background-color: transparent;
+    }
+}
+
+@keyframes show-menu {
+    from {
+        background-color: transparent;
+        width: 0;
+    }
+
+    to {
+        width: calc(100vw - 110px);
+        box-shadow: 0 0 25px rgba(198, 115, 7, 0.5);
+    }
+}
+
 .main {
     width: 100%;
     min-height: 100vh;
@@ -41,18 +103,6 @@ $primary_color: #d38c5c;
         box-shadow: 0 3px 0 rgb(52, 23, 3);
         padding-right: 2vw;
 
-        // @include respond-to('phoe') {
-        //     .logo {
-        //         width: 4vw;
-        //         height: 4vw;
-        //         background-color: black;
-
-        //         img {
-        //             width: 100%;
-        //             height: 100%;
-        //         }
-        //     }
-        // }
 
         .logo {
             width: 4vw;
@@ -63,19 +113,32 @@ $primary_color: #d38c5c;
                 width: 100%;
                 height: 100%;
             }
+
+            @include respond-to('phone') {
+                width: 8vw;
+                height: 8vw;
+            }
+
+            @include respond-to('tablet') {
+                width: 12vw;
+                height: 12vw;
+            }
         }
 
         .nav-content {
             display: flex;
             align-items: center;
+            position: relative;
 
             .navigation {
                 padding-right: 8vw;
                 font-size: 1.3em;
 
+
                 ul {
                     display: flex;
                     gap: 4vw;
+                    transition: visibility 1.2s ease;
 
                     li {
                         padding: 1vw;
@@ -83,15 +146,89 @@ $primary_color: #d38c5c;
                         transition: box-shadow 0.7s ease-in-out;
                         transition: font-size 0.7s ease-in-out;
                         font-weight: bold;
+                        position: relative;
 
                         &:hover {
 
                             box-shadow: 0 0 25px rgb(236, 174, 93, 0.5);
                             font-size: 1.5rem;
                         }
+
+                        @include respond-to('phone') {
+                            @include li-open();
+                            padding-left: 5vw;
+
+                            &:nth-child(2n+1) {
+                                background-color: #ba8e5e;
+                                color: rgb(52, 23, 3);
+                            }
+
+                            &::before {
+                                @include menu-open-before(3px)
+                            }
+
+                        }
+
+                        @include respond-to('tablet') {
+                            @include li-open();
+                            padding-left: 5vw;
+                            font-size: 1.5rem;
+
+                            &:nth-child(2n+1) {
+                                background-color: #ba8e5e;
+                                color: rgb(52, 23, 3);
+                            }
+
+                            &::before {
+                                @include menu-open-before(5px)
+                            }
+                        }
                     }
 
+                    @include respond-to('phone') {
+                        @include menu-open();
+                    }
 
+                    @include respond-to('tablet') {
+                        @include menu-open();
+                    }
+                }
+
+                .menu {
+                    display: none;
+                }
+
+                .open-menu {
+                    display: flex;
+
+                    @include respond-to('phone') {
+                        visibility: visible;
+                        animation-name: show-menu;
+                        animation-duration: 2s;
+                    }
+
+                    @include respond-to('tablet') {
+                        visibility: visible;
+                        animation-name: show-menu;
+                        animation-duration: 2s;
+                    }
+                }
+
+                .close-menu {
+                    display: flex;
+
+                    @include respond-to('phone') {
+                        animation-name: hide-menu;
+                        animation-duration: 2s;
+                        visibility: hidden;
+
+                    }
+
+                    @include respond-to('tablet') {
+                        animation-name: hide-menu;
+                        animation-duration: 2s;
+                        visibility: hidden;
+                    }
                 }
             }
 
@@ -108,6 +245,16 @@ $primary_color: #d38c5c;
                         box-shadow: 0 0 25px rgb(236, 174, 93, 0.5);
                     }
                 }
+
+                @include respond-to('phone') {
+                    padding-right: 3vw;
+
+                }
+
+                @include respond-to('tablet') {
+                    padding-right: 3vw;
+                }
+
             }
 
             .nav-btn {
@@ -135,6 +282,18 @@ $primary_color: #d38c5c;
                         position: absolute;
                         top: -14px;
                         transition-duration: 0.5s;
+                    }
+
+                    @include respond-to('phone') {
+                        height: 3px;
+
+                        &:before {
+                            height: 2px;
+                        }
+
+                        &:after {
+                            height: 3px;
+                        }
                     }
                 }
 
