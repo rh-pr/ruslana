@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { NavBtnContext} from '../../contexts/NavBtnContext'
 
 function NavBtn() {
-  const [activeBtn, setActiveBtn] = useState(false)
+  const { statusBtnNav, setStatusBtnNav } = useContext(NavBtnContext)
 
   const checkActivity = () => {
-    setActiveBtn(activeBtn => !activeBtn)
+    setStatusBtnNav(statusBtnNav => !statusBtnNav)
   }
 
   return (
     <div className='nav-btn' onClick={() => checkActivity()}>
-      <div className={`icon-btn ${activeBtn ? 'active' : ''}`}></div>
+      <div className={`icon-btn ${statusBtnNav ? 'active' : ''}`}></div>
     </div>
   )
 }

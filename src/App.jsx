@@ -1,11 +1,15 @@
 import './App.scss';
 import Home from './pages/Home';
+import { NavBtnProvider } from './contexts/NavBtnContext'
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <NavBtnProvider>
+       <div className="App">
+        <Home />
+      </div>
+    </NavBtnProvider>
+   
   );
 }
 

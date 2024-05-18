@@ -22,7 +22,7 @@ $primary_color: #d38c5c;
 
 %menu-btn {
     width: 40px;
-    height: 5px;
+    height: 4px;
     background-color: $primary_color;
 }
 
@@ -111,10 +111,10 @@ $primary_color: #d38c5c;
             }
 
             .nav-btn {
+                display: none;
                 margin-right: 5vw;
                 padding: 3px;
                 height: 26px;
-                display: flex;
                 align-items: center;
 
                 .icon-btn {
@@ -142,9 +142,6 @@ $primary_color: #d38c5c;
                     background-color: transparent;
                     rotate: 0deg;
 
-
-
-
                     &:before {
                         rotate: 45deg;
                         top: 0;
@@ -158,6 +155,13 @@ $primary_color: #d38c5c;
                     }
                 }
 
+                @include respond-to('phone') {
+                    display: flex;
+                }
+
+                @include respond-to('tablet') {
+                    display: flex;
+                }
             }
         }
 
