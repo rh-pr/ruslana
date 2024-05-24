@@ -5,6 +5,13 @@
         "Portpholio",
         "Contacts"
     ],
+    "aboutMe": {
+        "hi": "Hello, it's me!",
+        "name": "Ruslana Hural",
+        "level": "Junior",
+        "job": "Web-Developer",
+        "desc": "Embracing the digital frontier with a heart full of passion, as a junior web developer, I weave dreams into code and transform aspirations into reality!"
+    },
     "profile": "welcolm",
     "projects": {
         "pr1": {
