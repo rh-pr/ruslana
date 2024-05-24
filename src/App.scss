@@ -213,6 +213,10 @@ $primary_color: #d38c5c;
                         font-weight: bold;
                         position: relative;
 
+                        .link {
+                            color: $primary_color;
+                        }
+
                         &:hover {
 
                             box-shadow: 0 0 25px rgb(236, 174, 93, 0.5);
@@ -575,7 +579,7 @@ $primary_color: #d38c5c;
                     display: flex;
                     flex-direction: column;
                     width: 46vw;
-                    height: 28vh;
+                    height: 32vh;
                     z-index: 1;
                     position: absolute;
                     top: 12vh;

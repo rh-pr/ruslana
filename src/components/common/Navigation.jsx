@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavBtnContext } from '../../contexts/NavBtnContext'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Navigation() {
   const {statusBtnNav, setStatusBtnNav } = useContext(NavBtnContext)
@@ -8,6 +9,8 @@ function Navigation() {
 
   const { t } = useTranslation();
   const navbarList = t('nav', { returnObjects: true });
+
+  const navigation = useNavigate()
 
   useEffect(()=>{
     statusBtnNav ? setSwitchStatus(st => "open-menu") : setSwitchStatus(st => "close-menu");
@@ -17,7 +20,7 @@ function Navigation() {
     <nav className='navigation'>
         <ul className={`${switchStatus} menu`}>
             {Object.keys(navbarList).map(key => <li key={key}>
-                {navbarList[key]}
+                <Link to={`/${navbarList[key]}`} className='link'> {navbarList[key]} </Link>
             </li>)}
         </ul>
     </nav>
