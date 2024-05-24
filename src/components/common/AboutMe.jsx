@@ -9,13 +9,11 @@ function AboutMe() {
   return (
     <div className='about-me'>
         <div className='my-data' >
-           <div className='border'>
+           <div className='border'></div>
               <h3 className='hi' data-hi={aboutMe.hi}>{aboutMe.hi}</h3>
-              {/* <h3 className='hi'>{aboutMe && aboutMe.hi && aboutMe.hi.split(' ').map((el, ind) => <span key={ind}>{el} </span>)}</h3> */}
               <h2 data-text={aboutMe.name}>{aboutMe.name}</h2>
               <h3 className='job'><span className='level'>{aboutMe.level}</span> {aboutMe.job}</h3>
               <p>{aboutMe.desc}</p>
-           </div>
         </div>
         <div className='my-img'>
         <div className='figure'></div>
