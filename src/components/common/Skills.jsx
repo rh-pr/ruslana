@@ -12,7 +12,7 @@ export default function Skills() {
         <p className="h2Skills">{skills.header}</p>
         <div className='languages'>
             <div className='oneLng'>
-            <p>{skills.language[2]}</p>
+            <p>{skills.language[1]}</p>
                 <img src={ua}></img>
             </div>
             
