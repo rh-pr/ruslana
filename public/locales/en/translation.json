@@ -12,7 +12,30 @@
         "job": "Web-Developer",
         "desc": "Embracing the digital frontier with a heart full of passion, as a junior web developer, I weave dreams into code and transform aspirations into reality!"
     },
+    "links": [
+        {
+            "name": "git",
+            "address": "https://github.com/rh-pr"
+        },
+        {
+            "name": "lin",
+            "address": "https://linkedin.com/in/ruslana-hural-95292529b"
+        },
+        {
+            "name": "cv",
+            "address": "https://drive.google.com/file/d/1T0hIgFzgv4QUqOL-hJ-B3fgWU0dugFnZ/view?usp=sharing"
+        }
+    ],
     "profile": "welcolm",
+    "skills": {
+        "header": "My skills",
+        "language": [
+            "German",
+            "English",
+            "Ukrainian",
+            "another"
+        ]
+    },
     "projects": {
         "pr1": {
             "name": "My World",

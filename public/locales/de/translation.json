@@ -12,7 +12,30 @@
         "job": "Web-Entwicklerin",
         "desc": "Mit einem Herzen voller Leidenschaft die digitale Grenze umarmen: Als junge Webentwicklerin spinne ich Träume in Code und verwandle Hoffnungen in Realität!"
     },
+    "links": [
+        {
+            "name": "git",
+            "address": "https://github.com/rh-pr"
+        },
+        {
+            "name": "lin",
+            "address": "https://linkedin.com/in/ruslana-hural-95292529b"
+        },
+        {
+            "name": "cv",
+            "address": "https://drive.google.com/file/d/1fPAMBHDaSBzGQPtxL07f6d85LaPhwe-2/view?usp=sharing"
+        }
+    ],
     "profile": "Willkommen",
+    "skills": {
+        "header": "Meine Fähigkeiten",
+        "language": [
+            "Deutsch",
+            "English",
+            "Ukrainisch",
+            "andere"
+        ]
+    },
     "projects": {
         "pr1": {
             "name": "Meine Welt",

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Pacifico&family=Satisfy&display=swap');
 $primary_color: #d38c5c;
 
 
@@ -140,6 +142,28 @@ $primary_color: #d38c5c;
     }
 }
 
+@keyframes rotate-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(279deg);
+    }
+
+    100% {
+        transform: rotate((360deg));
+    }
+}
+
 @mixin block-animation($data, $trans) {
     content: attr($data);
     position: absolute;
@@ -214,7 +238,7 @@ $primary_color: #d38c5c;
                         position: relative;
 
                         .link {
-                            color: $primary_color;
+                            color: #905833;
                         }
 
                         &:hover {
@@ -400,11 +424,92 @@ $primary_color: #d38c5c;
         display: flex;
         flex-direction: column;
         padding: 2vh 2vw;
+        gap: 5vh;
 
         .about-me {
             display: flex;
             align-items: center;
             height: 80vh;
+            position: relative;
+
+            .my-link {
+                width: 4vw;
+                height: 4vw;
+                border: 1px solid rgb(165, 104, 42);
+                border-radius: 100%;
+                background-color: #bd8f59;
+                position: absolute;
+                box-shadow: 0 0 20px #9e6d1e, inset 0 0 10px #d0bea0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover {
+                    animation: rotate-icon 1s linear;
+                }
+
+                img {
+                    transform: scale(2);
+                }
+
+
+            }
+
+            .git {
+                top: 5vh;
+                right: 5vw;
+
+                @include respond-to('tablet') {
+                    position: fixed;
+                    top: 3vh;
+                    left: 30vw;
+
+                }
+
+                @include respond-to('phone') {
+                    position: fixed;
+                    top: 4vh;
+                    left: 30vw;
+                }
+            }
+
+            .cv {
+                top: 20vh;
+                right: 5vw;
+
+                @include respond-to('tablet') {
+                    position: fixed;
+                    top: 3vh;
+                    left: 40vw;
+                }
+
+                @include respond-to(('phone')) {
+                    position: fixed;
+                    top: 4vh;
+                    left: 40vw;
+                }
+            }
+
+            .lin {
+                right: 5vw;
+                overflow: hidden;
+
+                @include respond-to('tablet') {
+                    position: fixed;
+                    top: 3vh;
+                    left: 50vw;
+
+                }
+
+                @include respond-to('phone') {
+                    position: fixed;
+                    top: 4vh;
+                    left: 50vw;
+
+                }
+            }
 
             .my-data {
                 width: 40vw;
@@ -635,12 +740,97 @@ $primary_color: #d38c5c;
 
         }
 
+        .skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5vh;
+
+            .h2Skills {
+                font-family: "Satisfy", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 4rem;
+                // margin-bottom: 10vh; /*change
+            }
+
+            .languages {
+                display: flex;
+                justify-content: space-around;
+                width: 80%;
+                gap: 2vw;
+
+                .oneLng {
+                    width: 18vh;
+                    height: 20vh;
+
+                    p {
+                        width: 16vh;
+                        font-family: "Pacifico", cursive;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 1.5rem;
+                        margin-left: -8vh;
+                        padding-right: 1vw;
+                        text-align: right;
+                        // border-bottom: 1px solid rgb(251, 233, 210);
+                        box-shadow: 0 2px 20px rgb(251, 233, 210);
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            @include respond-to('tablet') {
+                margin-top: -30vh;
+                z-index: 1;
+                background-color: #000;
+
+                .languages {
+
+                    .h2Skills {
+                        // margin-top: -20vh /*change
+                    }
+
+                    .oneLng {
+                        width: 16vh;
+                        height: 18vh;
+
+                        p {
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                @include respond-to('phone') {
+                    .languages {
+                        gap: 5vw;
+
+                        .oneLng {
+                            width: 14vh;
+                            height: 14vh;
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+
     }
 
     .footer {
         height: 8vh;
         position: absolute;
-        bottom: 0;
+        // bottom: 0;
         background-color: red;
     }
 }

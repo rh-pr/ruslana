@@ -12,7 +12,30 @@
         "job": "Веб-розробник",
         "desc": "Обіймаючи цифровий фронт з серцем, сповненим пристрасті, я, як початківець веб-розробник, перетворюю мрії на код і прагнення в реальність!"
     },
+    "links": [
+        {
+            "name": "git",
+            "address": "https://github.com/rh-pr"
+        },
+        {
+            "name": "lin",
+            "address": "https://linkedin.com/in/ruslana-hural-95292529b"
+        },
+        {
+            "name": "cv",
+            "address": "https://drive.google.com/file/d/1T0hIgFzgv4QUqOL-hJ-B3fgWU0dugFnZ/view?usp=sharing"
+        }
+    ],
     "profile": "Ласкаво просимо",
+    "skills": {
+        "header": "Мої навички",
+        "language": [
+            "Німецька",
+            "Англійська",
+            "Українська",
+            "another"
+        ]
+    },
     "projects": {
         "pr1": {
             "name": "Мій світ",
