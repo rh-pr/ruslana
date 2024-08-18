@@ -32,8 +32,34 @@
         "language": [
             "Німецька",
             "Англійська",
-            "Українська",
-            "another"
+            "Українська"
+        ],
+        "programs": [
+            {
+                "id": 11,
+                "name": "JavaScript",
+                "rang": 4
+            },
+            {
+                "id": 21,
+                "name": "TypeScript",
+                "rang": 3
+            },
+            {
+                "id": 31,
+                "name": "React",
+                "rang": 4
+            },
+            {
+                "id": 41,
+                "name": "Tailwind",
+                "rang": 4
+            },
+            {
+                "id": 51,
+                "name": "Node.js",
+                "rang": 2
+            }
         ]
     },
     "projects": {
