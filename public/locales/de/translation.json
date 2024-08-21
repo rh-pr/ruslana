@@ -62,15 +62,17 @@
             }
         ]
     },
-    "projects": {
-        "pr1": {
+    "projects": [
+        {
+            "projectID": "111",
             "name": "Meine Welt",
             "services": [
                 "HTML",
                 "JS"
             ]
         },
-        "pr2": {
+        {
+            "projectID": "112",
             "name": "Wetter",
             "services": [
                 "CSS",
@@ -79,5 +81,6 @@
                 "eine"
             ]
         }
-    }
+    ],
+    "more": "Mere"
 }

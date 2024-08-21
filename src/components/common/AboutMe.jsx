@@ -11,7 +11,6 @@ function AboutMe() {
   // {Object.keys(navbarList)
   return (
     <div className='about-me'>
-      {console.log(links[2])}
       <a className='my-link git' href="https://github.com/rh-pr" target='_blank'><img src={git} alt="git" /></a>
       <a className='my-link lin' href="https://linkedin.com/in/ruslana-hural-
 95292529b" target='_blank'><img src={lin} alt="in" /></a>

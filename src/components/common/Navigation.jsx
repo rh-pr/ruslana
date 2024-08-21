@@ -19,9 +19,16 @@ function Navigation() {
   return (
     <nav className='navigation'>
         <ul className={`${switchStatus} menu`}>
-            {Object.keys(navbarList).map(key => <li key={key}>
+        {Object.keys(navbarList).map(key => 
+            {if(navbarList[key] == 'Skills') {
+                return <li key={key}>
+                  <Link to={'#skillsSection'} className='link'> {navbarList[key]} </Link>
+                </li>
+            } else {
+              return <li key={key}>
                 <Link to={`/${navbarList[key]}`} className='link'> {navbarList[key]} </Link>
-            </li>)}
+              </li>
+            }})}
         </ul>
     </nav>
   )

@@ -11,7 +11,6 @@ function Technologie({arrTechnologie, imgUrl}) {
         <img src={imgUrl} alt={arrTechnologie.name} className='imgTech' />
         <div className='rangTech'>
             {rang && rang.map(el => {
-                console.log(rang)
                 if (el === 1) {
                     fullRang = true;
                 }

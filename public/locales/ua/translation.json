@@ -62,15 +62,17 @@
             }
         ]
     },
-    "projects": {
-        "pr1": {
+    "projects": [
+        {
+            "projectID": "111",
             "name": "Мій світ",
             "services": [
                 "HTML",
                 "JS"
             ]
         },
-        "pr2": {
+        {
+            "projectID": "112",
             "name": "Погода",
             "services": [
                 "CSS",
@@ -79,5 +81,6 @@
                 "docek"
             ]
         }
-    }
+    ],
+    "more": "Ще"
 }

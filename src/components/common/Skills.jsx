@@ -40,7 +40,7 @@ export default function Skills() {
       }
     ]
   return (
-    <div className='skills'>
+    <div className='skills' id='skillsSection'>
         <p className="h2Skills">{skills.header}</p>
         <div className='languages'>
             {arrLanguage && arrLanguage.map((el, ind) => <LanguageSkills languageName={el} languageUrl={urls[ind]}/>)}
@@ -48,7 +48,6 @@ export default function Skills() {
         <div className='technologie'>
           {arrTechnologie && arrTechnologie.map(el => {
             const findImgUrl = urlsTech.find(obj => obj.name == el.name)
-           
             return <Technologie arrTechnologie={el} imgUrl={findImgUrl.url}/>
           })}
         </div>

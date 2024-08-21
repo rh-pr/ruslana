@@ -12,6 +12,7 @@ $primary_color: #d38c5c;
 body {
     width: 100vw;
     background-color: $primary_background;
+    scroll-behavior: smooth;
 
     .App {
         width: 100%;

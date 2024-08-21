@@ -1,7 +1,7 @@
 {
     "nav": [
         "Home",
-        "Skils",
+        "Skills",
         "Portpholio",
         "Contacts"
     ],
@@ -62,22 +62,38 @@
             }
         ]
     },
-    "projects": {
-        "pr1": {
+    "projects": [
+        {
+            "projectID": "111",
             "name": "My World",
             "services": [
                 "HTML",
                 "JS"
-            ]
+            ],
+            "url": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029"
         },
-        "pr2": {
+        {
+            "projectID": "112",
             "name": "Wether",
             "services": [
                 "CSS",
                 "HTML",
                 "JS",
                 "one"
-            ]
+            ],
+            "url": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029"
+        },
+        {
+            "projectID": "113",
+            "name": "Cat%Dog",
+            "services": [
+                "CSS",
+                "HTML",
+                "JS",
+                "one"
+            ],
+            "url": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029"
         }
-    }
+    ],
+    "more": "More"
 }
