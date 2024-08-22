@@ -30,7 +30,8 @@ function PortpholioCollaps() {
           {activeProject && <Project projectData={activeProject} slideType={'active'}/>}
           {nextProject && <Project projectData={nextProject} slideType={'next'}/>}
 
-          {/* {projects && <Project projectData={projects[0]}/>} */}
+          <div className='prevBtn sledeBtn'></div>
+          <div className='nextBtn sledeBtn'></div>
           
         </div>}
         
