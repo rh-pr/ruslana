@@ -2,24 +2,23 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import point from '../../assets/images/pr/point.png'
 
-function Project({projectData}) {
+function Project({projectData, slideType}) {
     const { t } = useTranslation();
     const more = t('more');
-    const imgUrl = projectData.url;
   return (
-    <div className='project'>
+    <div className={`project ${slideType}`}>
         <img src={point} alt="point" className='point'/>
         <figure>
-            <img src={imgUrl} alt="img" />
+            <img src={projectData.urlImg} alt="img" />
         </figure>
         <div className='projectInf'>
             <p className='projectName'>{projectData.name}</p>
             <div className='services'>
-                {projectData.services && projectData.services.map(el => (
-                    <span key={projectData.id}>{el} </span>
+                {projectData.services && projectData.services.map((el, index) => (
+                    <span key={index}>{el} </span>
                 ))}
             </div>
-            <button>{more}</button>
+            <a href={projectData.urlPrj} target="_blank" className='button'>{more}</a>
         </div>
     </div>
   )

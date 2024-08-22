@@ -922,6 +922,7 @@ $primary_color: #d38c5c;
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 padding: 5vh 0;
                 background-image: url(./assets/images/pr/bg.jpg);
                 background-repeat: no-repeat;
@@ -936,7 +937,7 @@ $primary_color: #d38c5c;
                     border-image: linear-gradient(45deg, #e7bf94, #d4876a, #381502) 1;
                     box-shadow: 3px 3px 10px #381502, 5px 5px 10px #e7bf94, 7px 7px 10px #e7bf94,
                         -3px -3px 10px #381502, -5px -5px 10px #2b1b0a, -7px -7px 10px #e8ac6b, ;
-
+                    transition: all 3000ms ease-in-out;
 
                     .point {
                         width: 2vh;
@@ -984,7 +985,7 @@ $primary_color: #d38c5c;
                             }
                         }
 
-                        button {
+                        .button {
                             border-radius: 20px;
                             background-color: #3e1403;
                             color: #d0bea0;
@@ -999,6 +1000,49 @@ $primary_color: #d38c5c;
                         }
                     }
                 }
+
+                .prev,
+                .next {
+                    height: 20vh;
+                    width: 30vh;
+                    pointer-events: none;
+
+                    @include respond-to('tablet') {
+                        .projectInf {
+                            .projectName {
+                                font-size: 1.5rem;
+                            }
+
+                            .services {
+                                font-size: 0.8rem;
+
+                            }
+                        }
+                    }
+
+
+
+                }
+
+                @include respond-to('phone') {
+
+                    .project {
+                        width: 80%;
+                    }
+
+                    .prev,
+                    .next {
+                        display: none;
+
+                        .projectInf {
+                            .button {
+                                height: 2vh;
+                                padding: 1px;
+                            }
+                        }
+                    }
+                }
+
             }
 
         }
