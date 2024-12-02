@@ -5,6 +5,7 @@ import point from '../../assets/images/pr/point.png'
 function Project({projectData, slideType}) {
     const { t } = useTranslation();
     const more = t('more');
+    console.log(projectData,' data')
   return (
     <div className={`project ${slideType}`}>
         <img src={point} alt="point" className='point'/>
@@ -18,7 +19,7 @@ function Project({projectData, slideType}) {
                     <span key={index}>{el} </span>
                 ))}
             </div>
-            <a href={projectData.urlPrj} target="_blank" className='button'>{more}</a>
+            <a href={projectData.urlPrj} target="_blank" className='button more'>{more}</a>
         </div>
     </div>
   )

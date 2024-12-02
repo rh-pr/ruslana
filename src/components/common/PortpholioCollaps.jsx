@@ -10,28 +10,37 @@ import Project from './Project';
 function PortpholioCollaps() {
     const { t } = useTranslation();
     const projects = t('projects', { returnObjects: true });
-    const [activeProject, setActiveProject] = useState(null)
-    const [prevProject, setPrevProject] = useState(null);
-    const [nextProject, setNextProject] = useState(null)
-    
-    useEffect(() => {
-      if (projects && projects.length > 0) {
-        setActiveProject(projects[0]);
-        setPrevProject(projects.length > 1 ? projects[projects.length - 1] : projects[0]);
-        setNextProject(projects.length > 1 ? projects[1] : projects[0]);
-      }
-    }, [projects])
-    
+    const [projectsArray, setProjectsArray] = useState([]);
+
+    const nextSlide = () => {
+      setProjectsArray((prevArray) => {
+          const lastProject = prevArray[0];
+          return [...prevArray.slice(1), lastProject];
+      });
+  };
+
+  const prevSlide = () => {
+      setProjectsArray((prevArray) => {
+          const firstProject = prevArray[prevArray.length - 1];
+          return [firstProject, ...prevArray.slice(0, -1)];
+      });
+  };
+
+  useEffect(() => {
+    setProjectsArray([...projects.projects]);
+  }, [])
+  
   return (
     <div className="slides">
-        <p className='h2Collaps'>Portpholio</p>
+        <p className='h2Collaps'>{projects.header}</p>
         {<div className='slideshow'>
-          {prevProject && <Project projectData={prevProject} slideType={'prev'}/>}
-          {activeProject && <Project projectData={activeProject} slideType={'active'}/>}
-          {nextProject && <Project projectData={nextProject} slideType={'next'}/>}
+          {projectsArray.length > 0 &&  <> 
+            <Project projectData={projectsArray[0]} slideType={'prev'}/>
+            <Project projectData={projectsArray[1]} slideType={'centerProj'}/>
+            <Project projectData={projectsArray[2]} slideType={'next'}/> </>}
 
-          <div className='prevBtn sledeBtn'></div>
-          <div className='nextBtn sledeBtn'></div>
+          <div className='prevBtn sledeBtn' onClick={() => prevSlide()}></div>
+          <div className='nextBtn sledeBtn' onClick={() => nextSlide()}></div>
           
         </div>}
         

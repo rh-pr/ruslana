@@ -2,8 +2,7 @@
     "nav": [
         "Home",
         "Skills",
-        "Portpholio",
-        "Contacts"
+        "Portpholio"
     ],
     "aboutMe": {
         "hi": "Hello, it's me!",
@@ -62,66 +61,79 @@
             }
         ]
     },
-    "projects": [
-        {
-            "projectID": "111",
-            "name": "Portpholio",
-            "services": [
-                "React",
-                "SCSS"
-            ],
-            "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
-            "urlPrj": "https://github.com/rusjah/cats.git"
-        },
-        {
-            "projectID": "112",
-            "name": "Cat",
-            "services": [
-                "CSS",
-                "React"
-            ],
-            "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr2.png?updatedAt=1724255719120",
-            "urlPrj": "https://github.com/rusjah/cats.git"
-        },
-        {
-            "projectID": "113",
-            "name": "Wether",
-            "services": [
-                "Tailwind",
-                "React"
-            ],
-            "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
-            "urlPrj": "https://github.com/rusjah/wether.git"
-        },
-        {
-            "projectID": "114",
-            "name": "Holiday Page",
-            "services": [
-                "HTML",
-                "CSS"
-            ],
-            "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
-            "urlPrj": "https://github.com/Kashaf-Shahraaz/Holiday-page.git"
-        },
-        {
-            "projectID": "115",
-            "name": "Parents-on-weekend",
-            "services": [
-                "React",
-                "Backendless"
-            ],
-            "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr5.png?updatedAt=1724256988075",
-            "urlPrj": "https://github.com/rusjah/parents-on-weekend"
-        },
-        {
-            "projectID": "115",
-            "name": "Simple server",
-            "services": [
-                "Node.js"
-            ],
-            "urlImg": "https://images.unsplash.com/photo-1542382257-80dedb725088?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "urlPrj": "https://github.com/rh-pr/node_js_first_server"
-        }
-    ],
+    "projects": {
+        "header": "Portpholio",
+        "projects": [
+            {
+                "projectID": "111",
+                "name": "Portpholio",
+                "services": [
+                    "React",
+                    "SCSS"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
+                "urlPrj": "https://github.com/rusjah/cats.git"
+            },
+            {
+                "projectID": "112",
+                "name": "Cat",
+                "services": [
+                    "CSS",
+                    "React"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr2.png?updatedAt=1724255719120",
+                "urlPrj": "https://github.com/rusjah/cats.git"
+            },
+            {
+                "projectID": "113",
+                "name": "Wether",
+                "services": [
+                    "Tailwind",
+                    "React"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr3.png?updatedAt=1724256035903",
+                "urlPrj": "https://github.com/rusjah/wether.git"
+            },
+            {
+                "projectID": "114",
+                "name": "Holiday Page",
+                "services": [
+                    "HTML",
+                    "CSS"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr4.png?updatedAt=1724256036559",
+                "urlPrj": "https://github.com/Kashaf-Shahraaz/Holiday-page.git"
+            },
+            {
+                "projectID": "115",
+                "name": "Parents-on-weekend",
+                "services": [
+                    "React",
+                    "Backendless"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr5.png?updatedAt=1724256988075",
+                "urlPrj": "https://github.com/rusjah/parents-on-weekend"
+            },
+            {
+                "projectID": "115",
+                "name": "Planets",
+                "services": [
+                    "Node.js"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
+                "urlPrj": "https://github.com/rh-pr/node_js_first_server"
+            },
+            {
+                "projectID": "116",
+                "name": "Kirk",
+                "services": [
+                    "React",
+                    "Tailwind"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr6.png?updatedAt=1733153396330",
+                "urlPrj": "https://savalytix.drk.dpschool.app/"
+            }
+        ]
+    },
     "more": "More"
 }

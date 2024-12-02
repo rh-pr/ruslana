@@ -2,8 +2,7 @@
     "nav": [
         "Головна",
         "Навички",
-        "Портфоліо",
-        "Контакти"
+        "Портфоліо"
     ],
     "aboutMe": {
         "hi": "Привіт, це я!",
@@ -62,25 +61,79 @@
             }
         ]
     },
-    "projects": [
-        {
-            "projectID": "111",
-            "name": "Мій світ",
-            "services": [
-                "HTML",
-                "JS"
-            ]
-        },
-        {
-            "projectID": "112",
-            "name": "Погода",
-            "services": [
-                "CSS",
-                "HTML",
-                "JS",
-                "docek"
-            ]
-        }
-    ],
-    "more": "Ще"
+    "projects": {
+        "header": "Портфоліо",
+        "projects": [
+            {
+                "projectID": "111",
+                "name": "Portpholio",
+                "services": [
+                    "React",
+                    "SCSS"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
+                "urlPrj": "https://github.com/rusjah/cats.git"
+            },
+            {
+                "projectID": "112",
+                "name": "Cat",
+                "services": [
+                    "CSS",
+                    "React"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr2.png?updatedAt=1724255719120",
+                "urlPrj": "https://github.com/rusjah/cats.git"
+            },
+            {
+                "projectID": "113",
+                "name": "Wether",
+                "services": [
+                    "Tailwind",
+                    "React"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr3.png?updatedAt=1724256035903",
+                "urlPrj": "https://github.com/rusjah/wether.git"
+            },
+            {
+                "projectID": "114",
+                "name": "Holiday Page",
+                "services": [
+                    "HTML",
+                    "CSS"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr4.png?updatedAt=1724256036559",
+                "urlPrj": "https://github.com/Kashaf-Shahraaz/Holiday-page.git"
+            },
+            {
+                "projectID": "115",
+                "name": "Parents-on-weekend",
+                "services": [
+                    "React",
+                    "Backendless"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr5.png?updatedAt=1724256988075",
+                "urlPrj": "https://github.com/rusjah/parents-on-weekend"
+            },
+            {
+                "projectID": "115",
+                "name": "Planets",
+                "services": [
+                    "Node.js"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
+                "urlPrj": "https://github.com/rh-pr/node_js_first_server"
+            },
+            {
+                "projectID": "116",
+                "name": "Kirk",
+                "services": [
+                    "React",
+                    "Tailwind"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr6.png?updatedAt=1733153396330",
+                "urlPrj": "https://savalytix.drk.dpschool.app/"
+            }
+        ]
+    },
+    "more": "Більше"
 }
