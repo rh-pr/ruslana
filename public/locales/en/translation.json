@@ -72,7 +72,15 @@
                     "SCSS"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
-                "urlPrj": "https://github.com/rusjah/cats.git"
+                "gitUrl": "https://github.com/rusjah/cats.git",
+                "url": "",
+                "description": "This is my first portfolio website, designed to showcase my journey as a web developer. Built with React and styled with SCSS, this project reflects my passion for creating dynamic and visually appealing web experiences.",
+                "libraries": [
+                    "i18next",
+                    "sass",
+                    "react-router-dom"
+                ],
+                "tags": "frontend"
             },
             {
                 "projectID": "112",
@@ -82,7 +90,13 @@
                     "React"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr2.png?updatedAt=1724255719120",
-                "urlPrj": "https://github.com/rusjah/cats.git"
+                "gitUrl": "https://github.com/rusjah/cats.git",
+                "url": "https://cats-rh.netlify.app/",
+                "description": "React-based web application designed to manage and display information about cats interactively. The application provides features to browse detailed information about individual cats and track deleted cats for record purposes.",
+                "libraries": [
+                    "react-router-dom"
+                ],
+                "tags": "frontend"
             },
             {
                 "projectID": "113",
@@ -92,7 +106,11 @@
                     "React"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr3.png?updatedAt=1724256035903",
-                "urlPrj": "https://github.com/rusjah/wether.git"
+                "gitUrl": "https://github.com/rusjah/wether.git",
+                "description": "A simple weather app that provides real-time weather updates for your current location or any city worldwide. With a clean and user-friendly interface, it displays temperature, humidity, wind speed, and a 5-day forecast, helping you plan your day with ease!",
+                "url": "",
+                "libraries": [],
+                "tags": "frontend"
             },
             {
                 "projectID": "114",
@@ -102,7 +120,11 @@
                     "CSS"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr4.png?updatedAt=1724256036559",
-                "urlPrj": "https://github.com/Kashaf-Shahraaz/Holiday-page.git"
+                "gitUrl": "https://github.com/Kashaf-Shahraaz/Holiday-page.git",
+                "description": "A simple and elegant website template designed for showcasing personal or business projects. Featuring a clean layout, responsive design",
+                "url": "",
+                "libraries": [],
+                "tags": "frontend"
             },
             {
                 "projectID": "115",
@@ -112,7 +134,17 @@
                     "Backendless"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr5.png?updatedAt=1724256988075",
-                "urlPrj": "https://github.com/rusjah/parents-on-weekend"
+                "gitUrl": "https://github.com/rusjah/parents-on-weekend",
+                "description": "A heartwarming platform connecting lonely older adults with families in need of support with pets or children. This site fosters meaningful relationships, providing companionship for seniors while offering trusted help for busy parents and pet owners.",
+                "url": "",
+                "libraries": [
+                    "axios",
+                    "imagekitio-react",
+                    "react-calendar",
+                    "reac-media-recorder-2",
+                    "react-toastify"
+                ],
+                "tags": "fullstack"
             },
             {
                 "projectID": "115",
@@ -121,7 +153,16 @@
                     "Node.js"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
-                "urlPrj": "https://github.com/rh-pr/node_js_first_server"
+                "gitUrl": "https://github.com/rh-pr/node_js_first_server",
+                "url": "",
+                "description": "A futuristic platform showcasing rocket launch missions to explore other planets. This pet project highlights mission details, timelines, and goals, fueling curiosity and inspiration for space enthusiasts and aspiring explorers alike",
+                "libraries": [
+                    "nodemon",
+                    "express",
+                    "jest",
+                    "cors"
+                ],
+                "tags": "backend"
             },
             {
                 "projectID": "116",
@@ -131,7 +172,16 @@
                     "Tailwind"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr6.png?updatedAt=1733153396330",
-                "urlPrj": "https://savalytix.drk.dpschool.app/"
+                "gitUrl": "",
+                "url": "https://savalytix.drk.dpschool.app/",
+                "description": "An AI-powered analytics platform for the Red Cross, designed to streamline data analysis and provide quick, accurate answers across different departments. This tool enhances decision-making, improves response times, and supports efficient humanitarian efforts worldwide.",
+                "libraries": [
+                    "axios",
+                    "react-dropzone",
+                    "react-pdf",
+                    "uuid"
+                ],
+                "tags": "frontend"
             }
         ]
     },

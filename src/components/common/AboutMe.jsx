@@ -23,17 +23,11 @@ function AboutMe() {
               <h2 data-text={aboutMe.name}>{aboutMe.name}</h2>
               <h3 className='job'><span className='level'>{aboutMe.level}</span> {aboutMe.job}</h3>
               <p>{aboutMe.desc}</p>
-              <div>
-                {/* <a href="https://github.com/rh-pr" >git</a> */}
-                {/* <a href="linkedin.com/in/ruslana-hural-
-95292529b">in</a> */}
-              </div>
         </div>
         <div className='my-img'>
-        <div className='figure'></div>
-            {/* <figure>
-            <img src={mePath} alt="me" />
-            </figure> */}
+          <div className='figure'>
+            <div className='figureItem'></div>
+          </div>
         </div>
     </div>
   )

@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next';
-
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css';
 
 import Project from './Project';
 
 
 function PortpholioCollaps() {
     const { t } = useTranslation();
-    const projects = t('projects', { returnObjects: true });
+    const projects = useMemo(() => t('projects', { returnObjects: true }), [t]);
     const [projectsArray, setProjectsArray] = useState([]);
 
     const nextSlide = () => {
@@ -27,14 +24,17 @@ function PortpholioCollaps() {
   };
 
   useEffect(() => {
-    setProjectsArray([...projects.projects]);
-  }, [])
+    projects.projects && setProjectsArray([...projects.projects]);
+    
+   }, [projects])
+
+
   
   return (
     <div className="slides">
         <p className='h2Collaps'>{projects.header}</p>
         {<div className='slideshow'>
-          {projectsArray.length > 0 &&  <> 
+          {projectsArray && projectsArray.length > 0 &&  <> 
             <Project projectData={projectsArray[0]} slideType={'prev'}/>
             <Project projectData={projectsArray[1]} slideType={'centerProj'}/>
             <Project projectData={projectsArray[2]} slideType={'next'}/> </>}

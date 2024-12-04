@@ -454,6 +454,8 @@ $primary_color: #d38c5c;
         flex-direction: column;
         padding: 2vh 2vw;
         gap: 5vh;
+        scroll-behavior: smooth;
+        transition: 1s;
 
         .about-me {
             display: flex;
@@ -648,6 +650,18 @@ $primary_color: #d38c5c;
                     background-repeat: no-repeat;
                     background-color: #fff;
                     background-image: url('./assets/images/me2sh.jpg');
+                    display: grid;
+                    grid-template-columns: repeat(10, 1fr);
+                    grid-template-rows: repeat(10, 1fr);
+
+                    &:hover {
+                        transform: scale(1.5);
+                        transition: 1s ease-in-out;
+                        border-top-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        box-shadow: 0px 0px 5px 5px rgb(37, 15, 1);
+                    }
 
                     img {
                         // width: 100%;
@@ -1083,12 +1097,194 @@ $primary_color: #d38c5c;
 
         }
 
+
+
+
     }
+
+    .projects-list {
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        padding: 30px 10px;
+
+        // &:hover {
+        //     transform: scale(2);
+        // }
+
+        .filter {
+            width: 20vw;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1.5rem;
+
+            label {
+                display: flex;
+                gap: 10px;
+
+                input[type=checkbox] {
+                    transform: scale(1.4);
+                    padding-right: 6px;
+                }
+            }
+        }
+
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+            padding: 30px;
+            transition: 0.5s;
+
+            .project-card {
+                background-color: white;
+                border: 3px solid rgba(43, 21, 7, 0.971);
+                width: 20vw;
+                height: 64vh;
+                border-radius: 10px;
+                transition: 0.6s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 6px 6px wheat;
+                }
+
+                .pr-img {
+                    width: 100%;
+                    height: 40%;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                .pr-name,
+                .pr-description,
+                .pr-lib,
+                .pr-links {
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                }
+
+                .pr-name {
+                    font-family: 'Matemasie';
+                    font-size: 2rem;
+                    color: #220c00;
+                    font-size: 1.7rem;
+                }
+
+                .pr-description {
+                    padding-bottom: 8px;
+                    color: #581f00;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+                .pr-links {
+                    display: flex;
+                    gap: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+
+
+                    .pr-url {
+                        cursor: pointer;
+                        padding-bottom: 10px;
+                        font-weight: bold;
+                        color: #220c00;
+                        background-color: black;
+                        padding: 6px;
+                        border-radius: 10px;
+
+                        &:hover {
+                            box-shadow: 0px 0px 5px 6px rgb(40, 23, 12);
+
+                        }
+
+                        a {
+                            color: #cc9f56;
+                        }
+
+                    }
+
+                }
+
+                .pr-lib {
+                    p {
+                        font-weight: bold;
+                        color: #120904;
+                        font-size: 1.5rem;
+                        font-family: 'Matemasie';
+                    }
+
+                    span {
+                        font-size: 1.3rem;
+                        color: #581f00;
+                    }
+
+                    .prser {
+                        font-weight: bold;
+                    }
+                }
+
+
+            }
+        }
+
+        @include respond-to('tablet') {
+            .projects-list {
+                justify-content: space-between;
+
+                .project-card {
+                    width: 32vw;
+                    height: fit-content;
+                }
+            }
+        }
+
+        @include respond-to('phone') {
+            .projects-list {
+                justify-content: center;
+                padding: 0;
+                padding-left: 50px;
+
+                .project-card {
+                    width: 100%;
+                    height: fit-content;
+                }
+
+            }
+
+            .filter {
+                width: 10vw;
+                font-size: 1rem;
+
+                label {
+                    display: flex;
+                    gap: 5px;
+
+                    input[type=checkbox] {
+                        transform: scale(1);
+                        padding-right: 6px;
+                    }
+                }
+
+
+            }
+
+
+
+        }
+
+    }
+
 
     .footer {
         height: 8vh;
         width: 100vw;
-        position: absolute;
+        // position: absolute;
         // bottom: 0;
         display: flex;
         justify-content: center;

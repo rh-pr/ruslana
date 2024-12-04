@@ -22,11 +22,14 @@ function Navigation() {
         {Object.keys(navbarList).map(key => 
             {if(navbarList[key] == 'Skills') {
                 return <li key={key}>
-                  <Link to={'#skillsSection'} className='link'> {navbarList[key]} </Link>
+                  {/* <Link to={'#skillsSection'} className='link'> {navbarList[key]} </Link> */}
+                
+                        <a href="home#skillsSection" className='link'>{navbarList[key]}</a>
+                 
                 </li>
             } else {
               return <li key={key}>
-                <Link to={`/${navbarList[key]}`} className='link'> {navbarList[key]} </Link>
+                <Link to={`/${navbarList[key].toLowerCase()}`} className='link'> {navbarList[key]} </Link>
               </li>
             }})}
         </ul>
