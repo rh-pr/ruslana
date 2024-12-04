@@ -655,19 +655,14 @@ $primary_color: #d38c5c;
                     grid-template-rows: repeat(10, 1fr);
 
                     &:hover {
-                        transform: scale(1.5);
+                        // transform: scale(1.5);
+                        background-position: 90% 10%;
+                        background-size: 1000px;
                         transition: 1s ease-in-out;
                         border-top-left-radius: 10px;
                         border-bottom-right-radius: 10px;
                         border-bottom-right-radius: 10px;
                         box-shadow: 0px 0px 5px 5px rgb(37, 15, 1);
-                    }
-
-                    img {
-                        // width: 100%;
-                        // height: 100%;
-                        width: 70vw;
-                        height: 70vh;
                     }
                 }
             }
@@ -1108,10 +1103,6 @@ $primary_color: #d38c5c;
         display: flex;
         padding: 30px 10px;
 
-        // &:hover {
-        //     transform: scale(2);
-        // }
-
         .filter {
             width: 20vw;
             min-height: 100%;
@@ -1122,11 +1113,32 @@ $primary_color: #d38c5c;
 
             label {
                 display: flex;
+                align-items: center;
                 gap: 10px;
 
-                input[type=checkbox] {
+                input[type="checkbox"] {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    width: 16px;
+                    height: 16px;
                     transform: scale(1.4);
                     padding-right: 6px;
+                    border: 2px solid #220c00;
+                    background-color: #ece3dd;
+                }
+
+                input[type=checkbox]:checked {
+                    background-color: #ece3dd;
+                }
+
+                input[type="checkbox"]:checked::after {
+                    content: "✔";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 14px;
+                    height: 14px;
+                    border-width: 0 3px 3px 0;
                 }
             }
         }

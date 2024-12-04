@@ -5,7 +5,6 @@ import point from '../../assets/images/pr/point.png'
 function Project({projectData, slideType}) {
     const { t } = useTranslation();
     const more = t('more');
-    console.log(projectData,' data')
   return (
     <div className={`project ${slideType}`}>
         <img src={point} alt="point" className='point'/>

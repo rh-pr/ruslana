@@ -1,8 +1,6 @@
 
 function ProjectPage({project}) {
-  console.log(project)
   return (
-    // <div className='project-card'>{project.name}</div>
     <div className='project-card'>
       <img src={project.urlImg} alt="img" className="pr-img" />
      

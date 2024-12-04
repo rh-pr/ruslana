@@ -10,11 +10,11 @@ function Technologie({arrTechnologie, imgUrl}) {
         <p className='nameTech'>{arrTechnologie.name}</p>
         <img src={imgUrl} alt={arrTechnologie.name} className='imgTech' />
         <div className='rangTech'>
-            {rang && rang.map(el => {
+            {rang && rang.map((el, ind) => {
                 if (el === 1) {
                     fullRang = true;
                 }
-                return <div className={ `point ${fullRang ? 'plus' : 'minus'}`}></div>              
+                return <div key={`one-${ind}`} className={ `point ${fullRang ? 'plus' : 'minus'}`}></div>              
             })}
         </div>
         

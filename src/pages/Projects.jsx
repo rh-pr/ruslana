@@ -15,16 +15,12 @@ function Projects() {
       projects.projects && setProjectsList([...projects.projects]);
      }, [projects])
 
-    useEffect(() => {
-      console.log('filtered', projectsList);
-      
-    },[filteredProjects])
 
   return (
    <Main>
      <div  className='projects-list'>
         <FilterBar projects={projectsList} setFilteredProjects={setFilteredProjects}/>
-        <div className='projects-list'> {filteredProjects && filteredProjects.map(el => <ProjectPage project={el}  />)}</div>
+        <div className='projects-list'> {filteredProjects && filteredProjects.map((el, ind) => <ProjectPage key={`prpage-${ind}`} project={el}  />)}</div>
      </div>
    </Main>
   )

@@ -66,7 +66,7 @@
         "projects": [
             {
                 "projectID": "111",
-                "name": "Portpholio",
+                "name": "Портфоліо",
                 "services": [
                     "React",
                     "SCSS"
@@ -74,16 +74,17 @@
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
                 "gitUrl": "https://github.com/rusjah/cats.git",
                 "url": "",
-                "description": "This is my first portfolio website, designed to showcase my journey as a web developer. Built with React and styled with SCSS, this project reflects my passion for creating dynamic and visually appealing web experiences.",
+                "description": "Це мій перший веб-сайт портфоліо, створений для демонстрації мого шляху як веб-розробника. Побудований з використанням React і стилізований за допомогою SCSS, цей проєкт відображає мою пристрасть до створення динамічних і візуально привабливих веб-додатків.",
                 "libraries": [
                     "i18next",
                     "sass",
                     "react-router-dom"
-                ]
+                ],
+                "tags": "frontend"
             },
             {
                 "projectID": "112",
-                "name": "Cat",
+                "name": "Коти",
                 "services": [
                     "CSS",
                     "React"
@@ -91,22 +92,25 @@
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr2.png?updatedAt=1724255719120",
                 "gitUrl": "https://github.com/rusjah/cats.git",
                 "url": "https://cats-rh.netlify.app/",
-                "description": "eact-based web application designed to manage and display information about cats interactively. The application provides features to browse detailed information about individual cats and track deleted cats for record purposes.",
+                "description": "Веб-додаток на основі React, призначений для інтерактивного управління та відображення інформації про котів. Додаток надає можливість переглядати детальну інформацію про окремих котів і відстежувати видалених котів для записів.",
                 "libraries": [
                     "react-router-dom"
-                ]
+                ],
+                "tags": "frontend"
             },
             {
                 "projectID": "113",
-                "name": "Wether",
+                "name": "Погода",
                 "services": [
                     "Tailwind",
                     "React"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr3.png?updatedAt=1724256035903",
                 "gitUrl": "https://github.com/rusjah/wether.git",
+                "description": "Простий додаток погоди, який надає актуальні дані про погоду для вашого поточного місцезнаходження або будь-якого міста в світі. З чистим і зручним інтерфейсом, він відображає температуру, вологість, швидкість вітру та прогноз на 5 днів, допомагаючи вам легко планувати свій день!",
                 "url": "",
-                "libraries": []
+                "libraries": [],
+                "tags": "frontend"
             },
             {
                 "projectID": "114",
@@ -117,32 +121,48 @@
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr4.png?updatedAt=1724256036559",
                 "gitUrl": "https://github.com/Kashaf-Shahraaz/Holiday-page.git",
+                "description": "ростий та елегантний шаблон веб-сайту, розроблений для демонстрації особистих або бізнес-проєктів. Відрізняється чистим дизайном та адаптивною версткою.",
                 "url": "",
-                "libraries": []
+                "libraries": [],
+                "tags": "frontend"
             },
             {
                 "projectID": "115",
-                "name": "Parents-on-weekend",
+                "name": "Батьки-на-вихідні",
                 "services": [
                     "React",
                     "Backendless"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr5.png?updatedAt=1724256988075",
                 "gitUrl": "https://github.com/rusjah/parents-on-weekend",
-                "url": "",
-                "libraries": []
+                "description": "Платформа, що з'єднує самотніх літніх людей із сім'ями, які потребують допомоги з дітьми або домашніми улюбленцями. Цей сайт сприяє створенню значущих стосунків, забезпечуючи компанію для літніх людей і надаючи надійну допомогу зайнятим батькам і власникам домашніх тварин.",
+                "url": "https://parents-on-wekend.netlify.app/",
+                "libraries": [
+                    "axios",
+                    "imagekitio-react",
+                    "react-calendar",
+                    "reac-media-recorder-2",
+                    "react-toastify"
+                ],
+                "tags": "fullstack"
             },
             {
                 "projectID": "115",
-                "name": "Planets",
+                "name": "Планети",
                 "services": [
                     "Node.js"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
                 "gitUrl": "https://github.com/rh-pr/node_js_first_server",
                 "url": "",
-                "description": "",
-                "libraries": []
+                "description": "Футуристична платформа, яка демонструє місії з запуску ракет для дослідження інших планет. Цей проєкт висвітлює деталі місій, графіки та цілі, пробуджуючи цікавість та надихаючи космічних ентузіастів і майбутніх дослідників.",
+                "libraries": [
+                    "nodemon",
+                    "express",
+                    "jest",
+                    "cors"
+                ],
+                "tags": "backend"
             },
             {
                 "projectID": "116",
@@ -154,8 +174,14 @@
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr6.png?updatedAt=1733153396330",
                 "gitUrl": "",
                 "url": "https://savalytix.drk.dpschool.app/",
-                "description": "",
-                "libraries": []
+                "description": "AАналітична платформа на базі штучного інтелекту для Червоного Хреста, створена для оптимізації аналізу даних і швидкого отримання точних відповідей для різних відділів. Цей інструмент покращує прийняття рішень, скорочує час реагування та підтримує ефективну гуманітарну діяльність по всьому світу.",
+                "libraries": [
+                    "axios",
+                    "react-dropzone",
+                    "react-pdf",
+                    "uuid"
+                ],
+                "tags": "frontend"
             }
         ]
     },

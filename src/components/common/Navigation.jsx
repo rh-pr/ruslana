@@ -14,7 +14,6 @@ function Navigation() {
 
   useEffect(()=>{
     statusBtnNav ? setSwitchStatus(st => "open-menu") : setSwitchStatus(st => "close-menu");
-    console.log('staus', statusBtnNav)
   },[statusBtnNav])
   return (
     <nav className='navigation'>
@@ -29,7 +28,7 @@ function Navigation() {
                 </li>
             } else {
               return <li key={key}>
-                <Link to={`/${navbarList[key].toLowerCase()}`} className='link'> {navbarList[key]} </Link>
+                <Link to={`/${navbarList[key].toLowerCase()}`} className='link' onClick={() => {setStatusBtnNav(false)}}> {navbarList[key]} </Link>
               </li>
             }})}
         </ul>

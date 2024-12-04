@@ -136,7 +136,7 @@
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr5.png?updatedAt=1724256988075",
                 "gitUrl": "https://github.com/rusjah/parents-on-weekend",
                 "description": "A heartwarming platform connecting lonely older adults with families in need of support with pets or children. This site fosters meaningful relationships, providing companionship for seniors while offering trusted help for busy parents and pet owners.",
-                "url": "",
+                "url": "https://parents-on-wekend.netlify.app/",
                 "libraries": [
                     "axios",
                     "imagekitio-react",

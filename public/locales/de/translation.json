@@ -66,7 +66,7 @@
         "projects": [
             {
                 "projectID": "111",
-                "name": "Portpholio",
+                "name": "Das Portpholio",
                 "services": [
                     "React",
                     "SCSS"
@@ -74,16 +74,17 @@
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
                 "gitUrl": "https://github.com/rusjah/cats.git",
                 "url": "",
-                "description": "This is my first portfolio website, designed to showcase my journey as a web developer. Built with React and styled with SCSS, this project reflects my passion for creating dynamic and visually appealing web experiences.",
+                "description": "Dies ist meine erste Portfolio-Website, entworfen, um meine Reise als Webentwickler zu präsentieren. Mit React erstellt und mit SCSS gestaltet, spiegelt dieses Projekt meine Leidenschaft wider, dynamische und optisch ansprechende Web-Erlebnisse zu schaffen.",
                 "libraries": [
                     "i18next",
                     "sass",
                     "react-router-dom"
-                ]
+                ],
+                "tags": "frontend"
             },
             {
                 "projectID": "112",
-                "name": "Cat",
+                "name": "Die Katze",
                 "services": [
                     "CSS",
                     "React"
@@ -91,22 +92,25 @@
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr2.png?updatedAt=1724255719120",
                 "gitUrl": "https://github.com/rusjah/cats.git",
                 "url": "https://cats-rh.netlify.app/",
-                "description": "eact-based web application designed to manage and display information about cats interactively. The application provides features to browse detailed information about individual cats and track deleted cats for record purposes.",
+                "description": "Eine auf React basierende Webanwendung zur interaktiven Verwaltung und Anzeige von Informationen über Katzen. Die Anwendung bietet Funktionen, um detaillierte Informationen über einzelne Katzen anzuzeigen und gelöschte Katzen für Aufzeichnungen zu verfolgen.",
                 "libraries": [
                     "react-router-dom"
-                ]
+                ],
+                "tags": "frontend"
             },
             {
                 "projectID": "113",
-                "name": "Wether",
+                "name": "Das Wtter",
                 "services": [
                     "Tailwind",
                     "React"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr3.png?updatedAt=1724256035903",
                 "gitUrl": "https://github.com/rusjah/wether.git",
+                "description": "Eine einfache Wetter-App, die Echtzeit-Wetterdaten für Ihren aktuellen Standort oder jede Stadt weltweit bereitstellt. Mit einer sauberen und benutzerfreundlichen Oberfläche zeigt sie Temperatur, Luftfeuchtigkeit, Windgeschwindigkeit und eine 5-Tage-Vorhersage an, um Ihnen die Tagesplanung zu erleichtern!",
                 "url": "",
-                "libraries": []
+                "libraries": [],
+                "tags": "frontend"
             },
             {
                 "projectID": "114",
@@ -117,32 +121,48 @@
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr4.png?updatedAt=1724256036559",
                 "gitUrl": "https://github.com/Kashaf-Shahraaz/Holiday-page.git",
+                "description": "Eine einfache und elegante Website-Vorlage, die entwickelt wurde, um persönliche oder geschäftliche Projekte zu präsentieren. Mit einem sauberen Layout und einem responsiven Design.",
                 "url": "",
-                "libraries": []
+                "libraries": [],
+                "tags": "frontend"
             },
             {
                 "projectID": "115",
-                "name": "Parents-on-weekend",
+                "name": "Eltern-auf-Wochenende",
                 "services": [
                     "React",
                     "Backendless"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr5.png?updatedAt=1724256988075",
                 "gitUrl": "https://github.com/rusjah/parents-on-weekend",
-                "url": "",
-                "libraries": []
+                "description": "Eine herzerwärmende Plattform, die einsame ältere Menschen mit Familien verbindet, die Unterstützung mit Haustieren oder Kindern benötigen. Diese Seite fördert bedeutungsvolle Beziehungen, bietet älteren Menschen Gesellschaft und bietet vertrauenswürdige Hilfe für beschäftigte Eltern und Tierhalter.",
+                "url": "https://parents-on-wekend.netlify.app/",
+                "libraries": [
+                    "axios",
+                    "imagekitio-react",
+                    "react-calendar",
+                    "reac-media-recorder-2",
+                    "react-toastify"
+                ],
+                "tags": "fullstack"
             },
             {
                 "projectID": "115",
-                "name": "Planets",
+                "name": "Die Planeten",
                 "services": [
                     "Node.js"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
                 "gitUrl": "https://github.com/rh-pr/node_js_first_server",
                 "url": "",
-                "description": "",
-                "libraries": []
+                "description": "Eine futuristische Plattform, die Raketenstartmissionen zur Erforschung anderer Planeten präsentiert. Dieses Projekt hebt Missionsdetails, Zeitpläne und Ziele hervor und weckt Neugier und Inspiration für Weltraumenthusiasten und angehende Entdecker.",
+                "libraries": [
+                    "nodemon",
+                    "express",
+                    "jest",
+                    "cors"
+                ],
+                "tags": "backend"
             },
             {
                 "projectID": "116",
@@ -154,8 +174,14 @@
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr6.png?updatedAt=1733153396330",
                 "gitUrl": "",
                 "url": "https://savalytix.drk.dpschool.app/",
-                "description": "",
-                "libraries": []
+                "description": "Eine KI-gestützte Analyseplattform für das Rote Kreuz, entwickelt, um die Datenanalyse zu optimieren und schnelle, präzise Antworten für verschiedene Abteilungen bereitzustellen. Dieses Tool verbessert die Entscheidungsfindung, verkürzt die Reaktionszeiten und unterstützt effiziente humanitäre Bemühungen weltweit.",
+                "libraries": [
+                    "axios",
+                    "react-dropzone",
+                    "react-pdf",
+                    "uuid"
+                ],
+                "tags": "frontend"
             }
         ]
     },
