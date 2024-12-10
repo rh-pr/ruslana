@@ -164,6 +164,20 @@ $primary_color: #d38c5c;
     }
 }
 
+@keyframes buttons-highlight {
+    0% {
+        box-shadow: 0 0 4px 4px rgb(18, 10, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 12px 12px rgb(60, 28, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 4px 4px rgb(18, 10, 0);
+    }
+}
+
 @mixin block-animation($data, $trans) {
     content: attr($data);
     position: absolute;
@@ -466,11 +480,13 @@ $primary_color: #d38c5c;
             .my-link {
                 width: 4vw;
                 height: 4vw;
-                border: 1px solid rgb(165, 104, 42);
+                // border: 1px solid rgb(165, 104, 42);
                 border-radius: 100%;
                 background-color: #bd8f59;
                 position: absolute;
-                box-shadow: 0 0 20px #9e6d1e, inset 0 0 10px #d0bea0;
+                // box-shadow: 0 0 20px #9e6d1e, inset 0 0 10px #d0bea0;
+
+                animation: buttons-highlight 3s ease-in-out infinite;
 
                 img {
                     width: 100%;
@@ -485,6 +501,12 @@ $primary_color: #d38c5c;
                     transform: scale(2);
                 }
 
+                @include respond-to('tablet') {
+                    @media (orientation: landscape) {
+                        width: 8vw;
+                        height: 8vw;
+                    }
+                }
 
             }
 
@@ -783,6 +805,7 @@ $primary_color: #d38c5c;
             flex-direction: column;
             align-items: center;
             gap: 16vh;
+            padding-top: 10px;
 
             .h2Skills {
                 @include h2heading();
@@ -885,8 +908,8 @@ $primary_color: #d38c5c;
                     }
 
                     .oneLng {
-                        width: 16vh;
-                        height: 18vh;
+                        width: 14vh;
+                        height: 16vh;
 
                         p {
                             box-shadow: none;
@@ -941,7 +964,7 @@ $primary_color: #d38c5c;
                 box-shadow: 3px 5px 25px 11px rgba(222, 120, 3, 0.45);
 
                 .project {
-                    width: 80vh;
+                    width: 40vw;
                     height: 40vh;
                     border: 2px solid rgb(225, 198, 170);
                     position: relative;
@@ -992,6 +1015,7 @@ $primary_color: #d38c5c;
                             height: 100%;
                             font-weight: bold;
                             font-size: 1rem;
+                            padding-top: 4px;
 
                             span {
                                 padding-left: 10px;
@@ -1021,7 +1045,7 @@ $primary_color: #d38c5c;
                 .prev,
                 .next {
                     height: 30vh;
-                    width: 48vh;
+                    width: 24vw;
                     pointer-events: none;
 
                     @include respond-to('tablet') {
@@ -1053,7 +1077,8 @@ $primary_color: #d38c5c;
 
                 .prevBtn {
                     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-                    left: calc(37% - 70vh);
+
+                    left: 0.5vw;
 
                     @include respond-to('tablet') {
                         left: 1vw;
@@ -1062,7 +1087,7 @@ $primary_color: #d38c5c;
 
                 .nextBtn {
                     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-                    right: calc(37% - 70vh);
+                    right: 0.5vw;
 
                     @include respond-to('tablet') {
                         right: 1vw;
@@ -1155,7 +1180,7 @@ $primary_color: #d38c5c;
                 background-color: white;
                 border: 3px solid rgba(43, 21, 7, 0.971);
                 width: 20vw;
-                height: 64vh;
+                min-height: 64vh;
                 border-radius: 10px;
                 transition: 0.6s ease-in-out;
 

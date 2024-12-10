@@ -73,7 +73,7 @@
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
                 "gitUrl": "https://github.com/rusjah/cats.git",
-                "url": "",
+                "url": "https://portpholio-rh.netlify.app",
                 "description": "Це мій перший веб-сайт портфоліо, створений для демонстрації мого шляху як веб-розробника. Побудований з використанням React і стилізований за допомогою SCSS, цей проєкт відображає мою пристрасть до створення динамічних і візуально привабливих веб-додатків.",
                 "libraries": [
                     "i18next",

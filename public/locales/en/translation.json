@@ -73,7 +73,7 @@
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
                 "gitUrl": "https://github.com/rusjah/cats.git",
-                "url": "",
+                "url": "https://portpholio-rh.netlify.app",
                 "description": "This is my first portfolio website, designed to showcase my journey as a web developer. Built with React and styled with SCSS, this project reflects my passion for creating dynamic and visually appealing web experiences.",
                 "libraries": [
                     "i18next",
@@ -182,6 +182,27 @@
                     "uuid"
                 ],
                 "tags": "frontend"
+            },
+            {
+                "projectID": "117",
+                "name": "Chat",
+                "services": [
+                    "React",
+                    "Tailwind",
+                    "Node.js",
+                    "Express",
+                    "Socket",
+                    "OpenAI"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr8.png?updatedAt=1733848432230",
+                "gitUrl": "https://github.com/rh-pr/chatBot.git",
+                "url": "https://chat-bot-weld-nine.vercel.app/",
+                "description": "An AI-powered chat aplication, where user can chatting with AI assistance.",
+                "libraries": [
+                    "express.js",
+                    "uuid"
+                ],
+                "tags": "fullstack"
             }
         ]
     },

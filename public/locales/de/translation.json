@@ -73,7 +73,7 @@
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr1.png?updatedAt=1724252161029",
                 "gitUrl": "https://github.com/rusjah/cats.git",
-                "url": "",
+                "url": "https://portpholio-rh.netlify.app",
                 "description": "Dies ist meine erste Portfolio-Website, entworfen, um meine Reise als Webentwickler zu präsentieren. Mit React erstellt und mit SCSS gestaltet, spiegelt dieses Projekt meine Leidenschaft wider, dynamische und optisch ansprechende Web-Erlebnisse zu schaffen.",
                 "libraries": [
                     "i18next",

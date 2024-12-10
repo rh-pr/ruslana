@@ -18,7 +18,7 @@ function Project({projectData, slideType}) {
                     <span key={index}>{el} </span>
                 ))}
             </div>
-            <a href="" target="_blank" className='button more'>{more}</a>
+            <a href="/portpholio" target="_blank" className='button more'>{more}</a>
         </div>
     </div>
   )

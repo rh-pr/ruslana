@@ -8,7 +8,7 @@ function ProjectPage({project}) {
       <p className="pr-description">{project.description}</p>
      <div className="pr-links">
       {project.gitUrl && <p className="pr-url"><a href={project.gitUrl} target="_black">Code</a></p>}
-      {project.url && <p className="pr-url"><a href={project.gitUrl} target="_black">Live</a></p>}
+      {project.url && <p className="pr-url"><a href={project.url} target="_black">Live</a></p>}
      </div>
       { <div className="pr-lib">
        <p> <span>  Additional Liebraries </span></p>
