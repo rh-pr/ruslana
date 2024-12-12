@@ -5,7 +5,8 @@
 $primary_color: #d38c5c;
 
 
-@mixin respond-to($breakpoint) {
+@mixin respond-to($breakpoint, $orientation) {
+
     @if $breakpoint =='phone' {
         @media (max-width: 600px) {
             @content;
@@ -13,8 +14,16 @@ $primary_color: #d38c5c;
     }
 
     @else if $breakpoint =='tablet' {
-        @media (max-width: 900px) {
-            @content;
+        @if $orientation == 'portrait' {
+            @media (min-width: 1000px) and (orientation: portrait) {
+                @content;
+            }
+        }
+
+        @else {
+            @media (max-width: 900px) {
+                @content;
+            }
         }
     }
 
@@ -245,15 +254,20 @@ $primary_color: #d38c5c;
                 height: 100%;
             }
 
-            @include respond-to('phone') {
+            @include respond-to('phone', '') {
                 width: 8vw;
                 height: 8vw;
             }
 
-            @include respond-to('tablet') {
-                width: 12vw;
-                height: 12vw;
+            @include respond-to('tablet', '') {
+                width: 10vw;
+                height: 10vw;
             }
+
+            @include respond-to('tablet',  'portrait')  {
+                width: 10vw;
+                height: 10vw;
+        }
         }
 
         .nav-content {
@@ -290,7 +304,7 @@ $primary_color: #d38c5c;
                             font-size: 1.5rem;
                         }
 
-                        @include respond-to('phone') {
+                        @include respond-to('phone', '') {
                             @include li-open();
                             padding-left: 5vw;
 
@@ -305,7 +319,7 @@ $primary_color: #d38c5c;
 
                         }
 
-                        @include respond-to('tablet') {
+                        @include respond-to('tablet', '') {
                             @include li-open();
                             padding-left: 5vw;
                             font-size: 1.5rem;
@@ -321,11 +335,11 @@ $primary_color: #d38c5c;
                         }
                     }
 
-                    @include respond-to('phone') {
+                    @include respond-to('phone', '') {
                         @include menu-open();
                     }
 
-                    @include respond-to('tablet') {
+                    @include respond-to('tablet', '') {
                         @include menu-open();
                     }
                 }
@@ -337,13 +351,13 @@ $primary_color: #d38c5c;
                 .open-menu {
                     display: flex;
 
-                    @include respond-to('phone') {
+                    @include respond-to('phone', '') {
                         visibility: visible;
                         animation-name: show-menu;
                         animation-duration: 2s;
                     }
 
-                    @include respond-to('tablet') {
+                    @include respond-to('tablet', '') {
                         visibility: visible;
                         animation-name: show-menu;
                         animation-duration: 2s;
@@ -353,14 +367,14 @@ $primary_color: #d38c5c;
                 .close-menu {
                     display: flex;
 
-                    @include respond-to('phone') {
+                    @include respond-to('phone','') {
                         animation-name: hide-menu;
                         animation-duration: 2s;
                         visibility: hidden;
 
                     }
 
-                    @include respond-to('tablet') {
+                    @include respond-to('tablet','') {
                         animation-name: hide-menu;
                         animation-duration: 2s;
                         visibility: hidden;
@@ -382,12 +396,12 @@ $primary_color: #d38c5c;
                     }
                 }
 
-                @include respond-to('phone') {
+                @include respond-to('phone','') {
                     padding-right: 3vw;
 
                 }
 
-                @include respond-to('tablet') {
+                @include respond-to('tablet','') {
                     padding-right: 3vw;
                 }
 
@@ -420,7 +434,7 @@ $primary_color: #d38c5c;
                         transition-duration: 0.5s;
                     }
 
-                    @include respond-to('phone') {
+                    @include respond-to('phone', '') {
                         height: 3px;
 
                         &:before {
@@ -450,11 +464,11 @@ $primary_color: #d38c5c;
                     }
                 }
 
-                @include respond-to('phone') {
+                @include respond-to('phone','') {
                     display: flex;
                 }
 
-                @include respond-to('tablet') {
+                @include respond-to('tablet','') {
                     display: flex;
                 }
             }
@@ -480,14 +494,11 @@ $primary_color: #d38c5c;
             .my-link {
                 width: 4vw;
                 height: 4vw;
-                // border: 1px solid rgb(165, 104, 42);
                 border-radius: 100%;
                 background-color: #bd8f59;
                 position: absolute;
-                // box-shadow: 0 0 20px #9e6d1e, inset 0 0 10px #d0bea0;
-
                 animation: buttons-highlight 3s ease-in-out infinite;
-
+              
                 img {
                     width: 100%;
                     height: 100%;
@@ -501,11 +512,18 @@ $primary_color: #d38c5c;
                     transform: scale(2);
                 }
 
-                @include respond-to('tablet') {
+                @include respond-to('tablet', '') {
                     @media (orientation: landscape) {
-                        width: 8vw;
-                        height: 8vw;
+                        width: 1vw;
+                        height: 1vw;
                     }
+                }
+
+                
+                @include respond-to('tablet',  'portrait')  {
+                        width: 10vw;
+                        height: 10vw;
+                        border: 1px solid white;  
                 }
 
             }
@@ -514,14 +532,14 @@ $primary_color: #d38c5c;
                 top: 5vh;
                 right: 5vw;
 
-                @include respond-to('tablet') {
+                @include respond-to('tablet','') {
                     position: fixed;
                     top: 3vh;
                     left: 30vw;
 
                 }
 
-                @include respond-to('phone') {
+                @include respond-to('phone','') {
                     position: fixed;
                     top: 4vh;
                     left: 30vw;
@@ -532,13 +550,13 @@ $primary_color: #d38c5c;
                 top: 20vh;
                 right: 5vw;
 
-                @include respond-to('tablet') {
+                @include respond-to('tablet','') {
                     position: fixed;
                     top: 3vh;
                     left: 40vw;
                 }
 
-                @include respond-to(('phone')) {
+                @include respond-to('phone', '') {
                     position: fixed;
                     top: 4vh;
                     left: 40vw;
@@ -549,14 +567,14 @@ $primary_color: #d38c5c;
                 right: 5vw;
                 overflow: hidden;
 
-                @include respond-to('tablet') {
+                @include respond-to('tablet','') {
                     position: fixed;
                     top: 3vh;
                     left: 50vw;
 
                 }
 
-                @include respond-to('phone') {
+                @include respond-to('phone','') {
                     position: fixed;
                     top: 4vh;
                     left: 50vw;
@@ -689,7 +707,7 @@ $primary_color: #d38c5c;
                 }
             }
 
-            @include respond-to('tablet') {
+            @include respond-to('tablet', '') {
                 position: relative;
 
                 .my-data {
@@ -735,7 +753,7 @@ $primary_color: #d38c5c;
             }
 
 
-            @include respond-to('phone') {
+            @include respond-to('phone','') {
                 flex-direction: column;
 
                 background-position: left;
@@ -795,9 +813,6 @@ $primary_color: #d38c5c;
                 }
             }
 
-
-
-
         }
 
         .skills {
@@ -809,6 +824,14 @@ $primary_color: #d38c5c;
 
             .h2Skills {
                 @include h2heading();
+
+                @include respond-to('phone','') {
+                    margin-bottom: -60px;
+                }
+
+                @include respond-to('tablet','') {
+                    margin-bottom: -80px;
+                }
             }
 
 
@@ -833,11 +856,21 @@ $primary_color: #d38c5c;
                         text-align: right;
                         // border-bottom: 1px solid rgb(251, 233, 210);
                         box-shadow: 0 2px 20px rgb(251, 233, 210);
+
+                        @include respond-to('tablet',  'portrait')  {
+                            width: 12vw;
+                            margin-left: -3vh;
+                        }
                     }
 
                     img {
                         width: 100%;
                         height: 100%;
+                    }
+
+                    @include respond-to('tablet',  'portrait')  {
+                        width: 16vw;
+                        height: 16vw;
                     }
                 }
             }
@@ -896,7 +929,7 @@ $primary_color: #d38c5c;
                 }
             }
 
-            @include respond-to('tablet') {
+            @include respond-to('tablet','') {
                 margin-top: -30vh;
                 z-index: 1;
                 background-color: #000;
@@ -917,7 +950,7 @@ $primary_color: #d38c5c;
                     }
                 }
 
-                @include respond-to('phone') {
+                @include respond-to('phone', '') {
                     .languages {
                         gap: 5vw;
 
@@ -1048,7 +1081,7 @@ $primary_color: #d38c5c;
                     width: 24vw;
                     pointer-events: none;
 
-                    @include respond-to('tablet') {
+                    @include respond-to('tablet','') {
                         .projectInf {
                             .projectName {
                                 font-size: 1.5rem;
@@ -1080,7 +1113,7 @@ $primary_color: #d38c5c;
 
                     left: 0.5vw;
 
-                    @include respond-to('tablet') {
+                    @include respond-to('tablet','') {
                         left: 1vw;
                     }
                 }
@@ -1089,12 +1122,12 @@ $primary_color: #d38c5c;
                     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
                     right: 0.5vw;
 
-                    @include respond-to('tablet') {
+                    @include respond-to('tablet', '') {
                         right: 1vw;
                     }
                 }
 
-                @include respond-to('phone') {
+                @include respond-to('phone','') {
 
                     .project {
                         width: 80%;
@@ -1116,9 +1149,6 @@ $primary_color: #d38c5c;
             }
 
         }
-
-
-
 
     }
 
@@ -1160,9 +1190,9 @@ $primary_color: #d38c5c;
                     content: "✔";
                     position: absolute;
                     left: 0px;
-                    top: 0px;
-                    width: 14px;
-                    height: 14px;
+                    top: -3px;
+                    width: 12px;
+                    height: 12px;
                     border-width: 0 3px 3px 0;
                 }
             }
@@ -1171,18 +1201,32 @@ $primary_color: #d38c5c;
         .projects-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             gap: 30px;
             padding: 30px;
             transition: 0.5s;
+
+            @include respond-to('tablet',  'portrait')  {
+                gap: 20px;
+            }
+
+            @include respond-to('tablet',  '')  {
+                gap: 20px;
+            }
 
             .project-card {
                 background-color: white;
                 border: 3px solid rgba(43, 21, 7, 0.971);
                 width: 20vw;
-                min-height: 64vh;
+                height: fit-content;
+                background-color: reds;
+                padding-top: 10px;
                 border-radius: 10px;
                 transition: 0.6s ease-in-out;
+                
+                @include respond-to('tablet',  'portrait')  {
+                    width: 36vw;
+                }
 
                 &:hover {
                     transform: scale(1.1);
@@ -1270,7 +1314,7 @@ $primary_color: #d38c5c;
             }
         }
 
-        @include respond-to('tablet') {
+        @include respond-to('tablet','') {
             .projects-list {
                 justify-content: space-between;
 
@@ -1281,7 +1325,7 @@ $primary_color: #d38c5c;
             }
         }
 
-        @include respond-to('phone') {
+        @include respond-to('phone','') {
             .projects-list {
                 justify-content: center;
                 padding: 0;
