@@ -150,11 +150,12 @@
                 "projectID": "115",
                 "name": "Планети",
                 "services": [
-                    "Node.js"
+                    "Node.js",
+                    "Docker"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
                 "gitUrl": "https://github.com/rh-pr/node_js_first_server",
-                "url": "",
+                "url": "http://13.61.25.136:8000/",
                 "description": "Футуристична платформа, яка демонструє місії з запуску ракет для дослідження інших планет. Цей проєкт висвітлює деталі місій, графіки та цілі, пробуджуючи цікавість та надихаючи космічних ентузіастів і майбутніх дослідників.",
                 "libraries": [
                     "nodemon",
