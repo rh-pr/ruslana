@@ -150,7 +150,8 @@
                 "projectID": "115",
                 "name": "Die Planeten",
                 "services": [
-                    "Node.js"
+                    "Node.js",
+                    "Docker"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
                 "gitUrl": "https://github.com/rh-pr/node_js_first_server",
