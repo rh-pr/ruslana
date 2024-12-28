@@ -150,11 +150,12 @@
                 "projectID": "115",
                 "name": "Planets",
                 "services": [
-                    "Node.js"
+                    "Node.js",
+                    "Docker"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
                 "gitUrl": "https://github.com/rh-pr/node_js_first_server",
-                "url": "",
+                "url": "http://13.61.25.136:8000/",
                 "description": "A futuristic platform showcasing rocket launch missions to explore other planets. This pet project highlights mission details, timelines, and goals, fueling curiosity and inspiration for space enthusiasts and aspiring explorers alike",
                 "libraries": [
                     "nodemon",
