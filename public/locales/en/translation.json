@@ -204,6 +204,30 @@
                     "uuid"
                 ],
                 "tags": "fullstack"
+            },
+            {
+                "projectID": "117",
+                "name": "Mira",
+                "services": [
+                    "React",
+                    "Tailwind",
+                    "Node.js",
+                    "Express",
+                    "MongoDB",
+                    "Sass"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr10.png?updatedAt=1753622258965",
+                "gitUrl": "https://github.com/rh-pr/mira-coaching",
+                "url": "https://mira-coaching.vercel.app/",
+                "description": "This is a website for coaching and team training. It allows users to connect via a contact form, leave testimonials, and learn about services for teams, workshops, and team-building. The site features a modern design, a feedback form, the ability to send messages via email, and database integration for saving testimonials.",
+                "libraries": [
+                    "react-router-dom",
+                    "uuid",
+                    "nodemailer",
+                    "mongoose",
+                    "cors"
+                ],
+                "tags": "fullstack"
             }
         ]
     },
