@@ -183,6 +183,30 @@
                     "uuid"
                 ],
                 "tags": "frontend"
+            },
+            {
+                "projectID": "117",
+                "name": "Mira",
+                "services": [
+                    "React",
+                    "Tailwind",
+                    "Node.js",
+                    "Express",
+                    "MongoDB",
+                    "Sass"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr10.png?updatedAt=1753622258965",
+                "gitUrl": "https://github.com/rh-pr/mira-coaching",
+                "url": "https://mira-coaching.vercel.app/",
+                "description": "Dies ist eine Website für Coaching und Teamtraining. Sie ermöglicht es Benutzern, über ein Kontaktformular in Verbindung zu treten, Referenzen zu hinterlassen und sich über Dienstleistungen für Teams, Workshops und Teambuilding zu informieren. Die Website verfügt über ein modernes Design, ein Feedback-Formular, die Möglichkeit, Nachrichten per E-Mail zu senden, und eine Datenbankintegration zum Speichern von Referenzen.",
+                "libraries": [
+                    "react-router-dom",
+                    "uuid",
+                    "nodemailer",
+                    "mongoose",
+                    "cors"
+                ],
+                "tags": "fullstack"
             }
         ]
     },
