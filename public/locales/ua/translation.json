@@ -150,11 +150,12 @@
                 "projectID": "115",
                 "name": "Планети",
                 "services": [
-                    "Node.js"
+                    "Node.js",
+                    "Docker"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
                 "gitUrl": "https://github.com/rh-pr/node_js_first_server",
-                "url": "",
+                "url": "http://13.61.25.136:8000/",
                 "description": "Футуристична платформа, яка демонструє місії з запуску ракет для дослідження інших планет. Цей проєкт висвітлює деталі місій, графіки та цілі, пробуджуючи цікавість та надихаючи космічних ентузіастів і майбутніх дослідників.",
                 "libraries": [
                     "nodemon",
@@ -182,6 +183,30 @@
                     "uuid"
                 ],
                 "tags": "frontend"
+            },
+            {
+                "projectID": "117",
+                "name": "Mira",
+                "services": [
+                    "React",
+                    "Tailwind",
+                    "Node.js",
+                    "Express",
+                    "MongoDB",
+                    "Sass"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr10.png?updatedAt=1753622258965",
+                "gitUrl": "https://github.com/rh-pr/mira-coaching",
+                "url": "https://mira-coaching.vercel.app/",
+                "description": "Це сайт для коучингу та командних тренінгів. Дозволяє користувачам зв’язатися через форму, залишати відгуки, дізнаватися про послуги для команд, воркшопи та тімбілдинг. Сайт має сучасний дизайн, форму зворотного зв’язку, можливість надсилати повідомлення на email, а також інтеграцію з базою даних для збереження відгуків.",
+                "libraries": [
+                    "react-router-dom",
+                    "uuid",
+                    "nodemailer",
+                    "mongoose",
+                    "cors"
+                ],
+                "tags": "fullstack"
             }
         ]
     },

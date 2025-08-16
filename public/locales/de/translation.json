@@ -150,11 +150,12 @@
                 "projectID": "115",
                 "name": "Die Planeten",
                 "services": [
-                    "Node.js"
+                    "Node.js",
+                    "Docker"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr7.png?updatedAt=1733153425185",
                 "gitUrl": "https://github.com/rh-pr/node_js_first_server",
-                "url": "",
+                "url": "http://13.61.25.136:8000/",
                 "description": "Eine futuristische Plattform, die Raketenstartmissionen zur Erforschung anderer Planeten präsentiert. Dieses Projekt hebt Missionsdetails, Zeitpläne und Ziele hervor und weckt Neugier und Inspiration für Weltraumenthusiasten und angehende Entdecker.",
                 "libraries": [
                     "nodemon",
@@ -182,6 +183,30 @@
                     "uuid"
                 ],
                 "tags": "frontend"
+            },
+            {
+                "projectID": "117",
+                "name": "Mira",
+                "services": [
+                    "React",
+                    "Tailwind",
+                    "Node.js",
+                    "Express",
+                    "MongoDB",
+                    "Sass"
+                ],
+                "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr10.png?updatedAt=1753622258965",
+                "gitUrl": "https://github.com/rh-pr/mira-coaching",
+                "url": "https://mira-coaching.vercel.app/",
+                "description": "Dies ist eine Website für Coaching und Teamtraining. Sie ermöglicht es Benutzern, über ein Kontaktformular in Verbindung zu treten, Referenzen zu hinterlassen und sich über Dienstleistungen für Teams, Workshops und Teambuilding zu informieren. Die Website verfügt über ein modernes Design, ein Feedback-Formular, die Möglichkeit, Nachrichten per E-Mail zu senden, und eine Datenbankintegration zum Speichern von Referenzen.",
+                "libraries": [
+                    "react-router-dom",
+                    "uuid",
+                    "nodemailer",
+                    "mongoose",
+                    "cors"
+                ],
+                "tags": "fullstack"
             }
         ]
     },
