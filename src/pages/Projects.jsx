@@ -18,7 +18,7 @@ function Projects() {
 
   return (
    <Main>
-     <div  className='projects-list'>
+     <div  className='projects'>
         <FilterBar projects={projectsList} setFilteredProjects={setFilteredProjects}/>
         <div className='projects-list'> {filteredProjects && filteredProjects.map((el, ind) => <ProjectPage key={`prpage-${ind}`} project={el}  />)}</div>
      </div>

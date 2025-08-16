@@ -172,8 +172,8 @@
                     "Tailwind"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr6.png?updatedAt=1733153396330",
-                "gitUrl": "",
-                "url": "https://savalytix.drk.dpschool.app/",
+                "gitUrl": "https://github.com/DigitalProductschool/batch22-drk",
+                "url": "",
                 "description": "An AI-powered analytics platform for the Red Cross, designed to streamline data analysis and provide quick, accurate answers across different departments. This tool enhances decision-making, improves response times, and supports efficient humanitarian efforts worldwide.",
                 "libraries": [
                     "axios",

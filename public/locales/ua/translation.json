@@ -172,8 +172,8 @@
                     "Tailwind"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr6.png?updatedAt=1733153396330",
-                "gitUrl": "",
-                "url": "https://savalytix.drk.dpschool.app/",
+                "gitUrl": "https://github.com/DigitalProductschool/batch22-drk",
+                "url": "",
                 "description": "AАналітична платформа на базі штучного інтелекту для Червоного Хреста, створена для оптимізації аналізу даних і швидкого отримання точних відповідей для різних відділів. Цей інструмент покращує прийняття рішень, скорочує час реагування та підтримує ефективну гуманітарну діяльність по всьому світу.",
                 "libraries": [
                     "axios",

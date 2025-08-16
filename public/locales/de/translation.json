@@ -172,8 +172,8 @@
                     "Tailwind"
                 ],
                 "urlImg": "https://ik.imagekit.io/gdvzxjp5x/portpholio/pr6.png?updatedAt=1733153396330",
-                "gitUrl": "",
-                "url": "https://savalytix.drk.dpschool.app/",
+                "gitUrl": "https://github.com/DigitalProductschool/batch22-drk",
+                "url": "",
                 "description": "Eine KI-gestützte Analyseplattform für das Rote Kreuz, entwickelt, um die Datenanalyse zu optimieren und schnelle, präzise Antworten für verschiedene Abteilungen bereitzustellen. Dieses Tool verbessert die Entscheidungsfindung, verkürzt die Reaktionszeiten und unterstützt effiziente humanitäre Bemühungen weltweit.",
                 "libraries": [
                     "axios",

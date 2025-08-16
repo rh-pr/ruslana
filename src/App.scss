@@ -1152,11 +1152,12 @@ $primary_color: #d38c5c;
 
     }
 
-    .projects-list {
+    .projects {
         width: 100%;
         min-height: 80vh;
         display: flex;
         padding: 30px 10px;
+        overflow-x: hidden;
 
         .filter {
             width: 20vw;
@@ -1202,9 +1203,10 @@ $primary_color: #d38c5c;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            gap: 30px;
+            gap: 20px;
             padding: 30px;
             transition: 0.5s;
+            overflow-x: hidden;
 
             @include respond-to('tablet',  'portrait')  {
                 gap: 20px;
@@ -1217,8 +1219,8 @@ $primary_color: #d38c5c;
             .project-card {
                 background-color: white;
                 border: 3px solid rgba(43, 21, 7, 0.971);
-                width: 20vw;
-                height: fit-content;
+                width: 26vw;
+                height: 86vh;
                 background-color: reds;
                 padding-top: 10px;
                 border-radius: 10px;
