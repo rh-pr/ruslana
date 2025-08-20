@@ -591,6 +591,7 @@ $primary_color: #d38c5c;
                 transition: transform 1s;
                 position: relative;
 
+
                 &:hover {
                     // padding-left: 3vw;
                     transform: translateX(5vw) scale(1.1);
@@ -731,6 +732,25 @@ $primary_color: #d38c5c;
                         padding: 0vh 2vh;
                     }
 
+                    @media (orientation: landscape) {
+                        padding-top: 10px;
+                        h2 {
+                            font-size: 1.5rem;
+                            padding: 0vh 2vh;
+                            padding-bottom: 10px;
+                        }
+
+                        h3 {
+                            font-size: 1.2em;
+                            padding-bottom: 12px;
+
+                        }
+                        p {
+                            padding: 2px 2vh;
+                            font-size: 0.8rem;
+                        }
+                    }
+
                 }
 
                 .my-img {
@@ -748,6 +768,17 @@ $primary_color: #d38c5c;
                         width: 70vw;
                         height: 40vh;
 
+                    }
+
+                    @media (orientation: landscape) {
+                        .figure {
+                            transform: scale(0.6);
+                            position: absolute;
+                            top: 5vh;
+                            right: 24vw;
+                            width: 24vw;
+                            height: 36vh;
+                        }
                     }
                 }
             }
@@ -797,6 +828,7 @@ $primary_color: #d38c5c;
                     p {
                         padding: 0vh 2vh;
                         font-size: 0.7rem;
+
                     }
                 }
 
@@ -811,9 +843,15 @@ $primary_color: #d38c5c;
 
                     }
                 }
+
+                 @media (orientation: landscape) {
+                      color: green;;
+                    }
             }
 
+
         }
+        
 
         .skills {
             display: flex;
@@ -825,12 +863,21 @@ $primary_color: #d38c5c;
             .h2Skills {
                 @include h2heading();
 
+
                 @include respond-to('phone','') {
                     margin-bottom: -60px;
+                    @media (orientation: landscape) {
+                        font-size: 2.5rem;
+                        padding-bottom: 30px;
+                    }
                 }
 
                 @include respond-to('tablet','') {
                     margin-bottom: -80px;
+                    @media (orientation: landscape) {
+                        font-size: 3rem;
+                        padding-bottom: 40px;
+                    }
                 }
             }
 
@@ -1210,10 +1257,12 @@ $primary_color: #d38c5c;
 
             @include respond-to('tablet',  'portrait')  {
                 gap: 20px;
+                overflow-x: hidden;
             }
 
             @include respond-to('tablet',  '')  {
                 gap: 20px;
+                overflow-x: hidden;
             }
 
             .project-card {
